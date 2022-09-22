@@ -8,12 +8,16 @@ function App() {
   const [ data, setData ] = useState(null);
   
   useEffect(() => {
-		fetch("<TODO: insert api url here>")
+		fetch(
+      "https://kerckhoff.dailybruin.com/api/packages/flatpages/flatpage.2022.ethnic-studies-longterm"
+    )
 		.then(res => res.json())
 		.then(res => setData(res.data['article.aml']))
   }, [])
 
-  return (
+  data && console.log(data)
+
+  return data && (
     <div className="App">
       <Header/>
       Hello Daily Bruin!

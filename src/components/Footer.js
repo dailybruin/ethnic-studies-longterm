@@ -9,7 +9,7 @@ import { mediaQueries } from '../shared/config';
 
 
 const Container = styled.div`
-	background-color: black;
+	background-color: #783E04;
 	height: auto;
 	color: white;
 	padding: 60px 0 10px 0;
@@ -19,7 +19,6 @@ const Container = styled.div`
 		font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
 	}
-  /* margin-bottom: 20px; */
 `
 
 const Socials = styled.div`
@@ -50,7 +49,7 @@ const Footer = () => {
           <a href="https://www.twitter.com/dailybruin" target="_blank"><img src={twitter}/></a>
           <a href="https://www.tiktok.com/@dailybruin" target="_blank"><img src={tiktok}/></a>
           <a href="http://eepurl.com/cFEiZX" target="_blank"><img src={email}/></a>
-          <p>Built with Suzy’s ♥ in Kerckhoff 118 by [developers]. Designed by [designers].</p>
+          <p>Built with Suzy’s ♥ in Kerckhoff 118 by Tracy Zhao. Designed by [designers].</p>
         </Socials>
     </Container>
     )
