@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
+import Divider from "../images/divider.svg";
+import TopDivider from "../images/top_divider.svg"
 
 const Container = styled.div`
   margin: 8% auto;
@@ -9,7 +11,6 @@ const Container = styled.div`
   font-weight: 200;
   font-size: 20px;
   line-height: 24px;
-  width: 85%;
   position: relative;
   h2 {
     font-size: 64px;
@@ -21,16 +22,38 @@ const Container = styled.div`
 const SectionHeader = styled.div`
   font-size: 24px;
   line-height: 1.5em;
+  font-family: 'Bitter', serif;
+  color: white;
+  margin-top: 1.5em;
+  ${mediaQueries.mobile} {
+    font-size: 22px;
+    line-height: 1em;
+  }
 `;
 
 const Figure = styled.div`
-  margin: 5% -50vw 5% -50vw;
-  left: 50%;
-  width: 100vw;
-  position: relative;
+  margin: 1em auto;
+  width: 90%;
   
   img {
-    width: 100vw;
+    width: 100%;
+  }
+`;
+
+const SideImg = styled.div`
+  float: right;
+  width: 50%;
+  font-size: 16px;
+  padding: 20px;
+  margin-right: 5%;
+
+  p {
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  img {
+    width: 100%;
   }
 `;
 
@@ -44,10 +67,16 @@ const CapCred = styled.div`
   }
 `;
 
-const Text = styled.p`
+const TextContainer = styled.div`
+  width: 90%;
+  margin: auto;
   color: white;
   font-family: 'Merriweather', serif;
-`;
+  ${mediaQueries.mobile} {
+    font-size: 12px;
+    line-height: 1em;
+  }
+`
 
 
 export default function Article(props) {
@@ -57,23 +86,42 @@ export default function Article(props) {
               if (info.type == "section_header")
               {
                 return (
-                  <SectionHeader>
-                    {info.value.section}
-                  </SectionHeader>
+                  <TextContainer>
+                    <SectionHeader>
+                      {info.value.section}
+                    </SectionHeader>
+                  </TextContainer>
                 )
               } else if (info.type == "text") {
-                return <Text>{info.value}</Text>;
-              } else if (info.type == "image") {
+                return (
+                  <TextContainer>
+                    <p>{info.value}</p>
+                  </TextContainer>
+                );
+              } else if (info.type == "graphic") {
                 return (
                   <Figure>
                     <img src = {info.value.url}/>
-                    <CapCred>{info.value.caption}</CapCred>
+                    <CapCred>{info.value.credits}</CapCred>
                   </Figure>
+                )
+              }
+              else if (info.type == "photo" || info.type == "illo") {
+                return (
+                  <SideImg>
+                    <img src = {info.value.url}/>
+                    <CapCred>{info.value.credits}</CapCred>
+                  </SideImg>
                 )
               }
               else if (info.type == "divider") {
                 return (
-                  <hr style={{"margin": "40px auto", "width": "100%"}}/>
+                  <img style={{"width": "100%"}} src={Divider}/>
+                )
+              }
+              else if (info.type == "top_divider") {
+                return (
+                  <img style={{"width": "100%"}} src={TopDivider}/>
                 )
               }
           })}
