@@ -32,13 +32,28 @@ const SectionHeader = styled.div`
 `;
 
 const Figure = styled.div`
-  margin: 5% -50vw 5% -50vw;
-  left: 50%;
-  width: 100vw;
-  position: relative;
+  margin: 1em auto;
+  width: 90%;
   
   img {
-    width: 100vw;
+    width: 100%;
+  }
+`;
+
+const SideImg = styled.div`
+  float: right;
+  width: 50%;
+  font-size: 16px;
+  padding: 20px;
+  margin-right: 5%;
+
+  p {
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  img {
+    width: 100%;
   }
 `;
 
@@ -83,12 +98,20 @@ export default function Article(props) {
                     <p>{info.value}</p>
                   </TextContainer>
                 );
-              } else if (info.type == "image") {
+              } else if (info.type == "graphic") {
                 return (
                   <Figure>
                     <img src = {info.value.url}/>
-                    <CapCred>{info.value.caption}</CapCred>
+                    <CapCred>{info.value.credits}</CapCred>
                   </Figure>
+                )
+              }
+              else if (info.type == "photo" || info.type == "illo") {
+                return (
+                  <SideImg>
+                    <img src = {info.value.url}/>
+                    <CapCred>{info.value.credits}</CapCred>
+                  </SideImg>
                 )
               }
               else if (info.type == "divider") {
