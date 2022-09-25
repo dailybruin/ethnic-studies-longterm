@@ -44,11 +44,16 @@ const CapCred = styled.div`
   }
 `;
 
+const Text = styled.p`
+  color: white;
+  font-family: 'Merriweather', serif;
+`;
+
 
 export default function Article(props) {
     return (
       <Container>
-          {props.main.map((info) => {
+          {props.content.map((info) => {
               if (info.type == "section_header")
               {
                 return (
@@ -57,7 +62,7 @@ export default function Article(props) {
                   </SectionHeader>
                 )
               } else if (info.type == "text") {
-                return <p>{info.value}</p>;
+                return <Text>{info.value}</Text>;
               } else if (info.type == "image") {
                 return (
                   <Figure>
