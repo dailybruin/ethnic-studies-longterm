@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-<<<<<<< HEAD
 import Landing from "./components/Landing";
-=======
 import Article from './components/Article';
->>>>>>> origin/tracy
+import Banner from "./components/Banner";
+import Timeline from "./components/Timeline";
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -26,11 +25,10 @@ function App() {
   return data && (
     <div className="App">
       <Header/>
-<<<<<<< HEAD
-      <Landing image={data.landing_image} credits={data.landing_credits} setLandingDisplayed={setLandingDisplayed}/>
-=======
+        <Landing image={data.landing_image} credits={data.landing_credits} setLandingDisplayed={setLandingDisplayed}/>
+        <Banner/>
         <Article content={data.content} />
->>>>>>> origin/tracy
+        <Timeline/>
       <Footer/>
     </div>
   );
