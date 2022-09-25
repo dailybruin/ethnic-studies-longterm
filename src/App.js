@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Landing from "./components/Landing";
 
 function App() {
   const [ data, setData ] = useState(null);
+  const [landingDisplayed, setLandingDisplayed] = useState(false);
   
   useEffect(() => {
 		fetch(
@@ -20,7 +22,7 @@ function App() {
   return data && (
     <div className="App">
       <Header/>
-      Hello Daily Bruin!
+      <Landing image={data.landing_image} credits={data.landing_credits} setLandingDisplayed={setLandingDisplayed}/>
       <Footer/>
     </div>
   );
