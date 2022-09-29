@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap');
+
+#timeline_box {
+    background-color: #ECF9F6;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.timeline-text{
+    font-family: 'bitter', serif;
+    color: #783E04;
+}
+#timeline-unit{
+    margin: 80px;
+}
+#timeline{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+#timeline-info{
+    width: 80%;
+    margin: auto;
+}
+#header{
+    font-weight: 600;
+}
+#explainer{
+    border-bottom: 2px #783E04 solid;
+    padding-bottom: 10px
+}
+#sources {
+    border-top: 2px #783E04 solid
+}
+#byline, #sources{
+    font-size: 12px;
+    margin: 0px
+}
+
+@media (max-width: 600px) {
+    #timeline{
+        width: 160%;
+        margin-left: -25%;
+    }
+    
+}
