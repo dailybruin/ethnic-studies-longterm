@@ -43,8 +43,8 @@ return (
               </Marker>);
         })}
 </Map>
-<p className='map-text'id = "sources">Sources: Data from University of California, Academic Senate</p>
-<p className='map-text'id = "byline">Interactive by Priya Kanneboyina, Assistant Data editor.</p>
+<p className='map-text'id = "sources">Sources: Board of Admissions and Relations with Schools, UC Academic Senate</p>
+<p className='map-text'id = "byline"> Graphic reporting by Shaanth Kodialam, Features and Student Life Editor and Catherine Hamilton National News and Higher Education Editor. Interactive by Priya Kanneboyina, Assistant Data editor.</p>
 </div>
 </Container>
 );
