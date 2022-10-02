@@ -7,6 +7,7 @@ import Landing from "./components/Landing";
 import Article from './components/Article';
 import Banner from "./components/Banner";
 import Timeline from "./components/Timeline";
+import MyMap from "./components/Map/map"
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -29,6 +30,7 @@ function App() {
         <Banner/>
         <Article content={data.content} />
         <Timeline/>
+        <MyMap/>
       <Footer/>
     </div>
   );
