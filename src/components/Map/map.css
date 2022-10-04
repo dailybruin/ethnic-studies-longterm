@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap');
+
+.map_container {
+    height: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+.leaflet-container {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+  }
+.map-text{
+    font-family: 'bitter', serif;
+    color: white;
+    margin: auto;
+    width: 80%;
+
+}
+#header{
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+#explainer{
+    border-bottom: 2px #783E04 solid;
+    padding-bottom: 10px
+}
+#sources {
+    border-top: 2px #783E04 solid
+}
+#byline, #sources{
+    font-size: 12px;
+
+}
+ 
+.popup{
+    font-family: 'bitter', serif;
+    margin: 0px;
+
+}
+#popup-header {
+    font-weight: bold; 
+    margin: 0px;
+}
+
+
+@media (max-width: 600px) {
+    #map{
+        width: 160%;
+        margin-left: -25%;
+    }
+    
+}
