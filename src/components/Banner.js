@@ -18,7 +18,7 @@ const Imagebox = styled.div`
 
 const Title = styled.div`
   font-family: 'Bitter', serif;
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 800;
   color: white;
   margin-top: -3em;
@@ -31,6 +31,7 @@ const ByTitle = styled.div`
   font-family: 'Bitter', serif;
   font-size: 20px;
   font-weight: 800;
+  line-height: 1.5em;
   color: white;
   ${mediaQueries.mobile} {
     font-size: 16px;
@@ -41,8 +42,8 @@ export default function Banner(props) {
     return (
         <Container>
             <Imagebox/>
-            <Title>Ethnic Studies Longterm Title</Title>
-            <ByTitle>by Shaanth Kodialam <br></br>Features and student life editor</ByTitle>
+            <Title>Deep dive into deliberations behind proposed UC ethnic studies entry requirement</Title>
+            {/* <ByTitle>by Shaanth Kodialam <br></br>Features and student life editor</ByTitle> */}
         </Container>
     );
 }
