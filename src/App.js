@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Timeline from './components/Timeline/Timeline';
 import Landing from "./components/Landing";
 import Article from './components/Article';
 import Banner from "./components/Banner";
