@@ -20,7 +20,7 @@ const Container = styled.div`
 `;
 
 const SectionHeader = styled.div`
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.5em;
   font-family: 'Bitter', serif;
   color: white;
