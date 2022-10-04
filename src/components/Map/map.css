@@ -3,13 +3,15 @@
 .map_container {
     height: 100%;
     align-items: center;
+    margin: auto;
     padding-bottom: 10px;
-
+    line-height: 1.5em;
 }
 .leaflet-container {
     width: 80%;
     height: 500px;
     margin: auto;
+    margin-top: 1.5em;
     align-items: center;
     padding: 10px;
   }
@@ -26,20 +28,20 @@
 }
 #explainer{
     border-bottom: 2px #783E04 solid;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 #sources {
-    border-top: 2px #783E04 solid
+    border-top: 2px #783E04 solid;
+    margin: auto;
 }
 #byline, #sources{
     font-size: 12px;
-
+    margin: auto;
 }
  
 .popup{
     font-family: 'bitter', serif;
     margin: 0px;
-
 }
 #popup-header {
     font-weight: bold; 

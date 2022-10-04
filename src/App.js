@@ -3,11 +3,10 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Timeline from './components/Timeline/Timeline';
 import Landing from "./components/Landing";
 import Article from './components/Article';
 import Banner from "./components/Banner";
-import Timeline from "./components/Timeline";
+import Timeline from "./components/Timeline/Timeline";
 import MyMap from "./components/Map/map"
 
 function App() {
@@ -29,9 +28,9 @@ function App() {
       <Header/>
         <Landing image={data.landing_image} credits={data.landing_credits} setLandingDisplayed={setLandingDisplayed}/>
         <Banner/>
-        <Article content={data.content} />
         <Timeline/>
         <MyMap/>
+        <Article content={data.content} />
       <Footer/>
     </div>
   );
