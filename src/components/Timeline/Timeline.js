@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Timeline = ()=>{
-    const VALUES = ['October 2020','November 2021', 'March 2022', 'April 2022', 'May 6, 2022', 'May 12, 2022', 'May 31, 2022', 'June 3, 2022'];
+    const VALUES = ['October 2020','November 2021', 'March 2022', 'April 2022', 'May 6, 2022', 'May 12, 2022', 'May 31, 2022', 'June 3, 2022', 'July 2022'];
     const Text = ['First Event','Second Event','Third Event', '4','5','6','7','8','9'];
     const [value, setValue] = useState(0);
     const [previous, setPrevious] = useState(0);
@@ -40,6 +40,7 @@ const Timeline = ()=>{
               values={ VALUES }
               getLabel= {(index)=>{return (index)}} 
               styles = {{outline: '#dfdfdf', foreground: '#79D8C3'}}
+              minEventPadding = {60}
               />
           </div>
           <div className='timeline-text text-center' id = 'timeline-info'>
