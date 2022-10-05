@@ -14,7 +14,9 @@
     color: #783E04;
 }
 #timeline-unit{
-    margin: 80px;
+    margin: auto;
+    height: 400px;
+    width: 80%;
 }
 #timeline{
     width: 100%;
