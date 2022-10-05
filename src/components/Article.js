@@ -59,6 +59,7 @@ const SideImg = styled.div`
 
 const CapCred = styled.div`
   font-style: italic;
+  color: white;
   font-size: 16px;
   margin-left: 1%;
   ${mediaQueries.mobile} {
