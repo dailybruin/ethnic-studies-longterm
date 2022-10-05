@@ -26,7 +26,7 @@ const Timeline = () =>{
             borderLessCards = {true}
             cardHeight={0}
             cardWidth={200}
-            disableAutoScrollOnClick = {false}
+            cardPositionHorizontal = {'TOP'}
             showAllCardsHorizontal = {true}
             theme={{
               primary: '#783e04',

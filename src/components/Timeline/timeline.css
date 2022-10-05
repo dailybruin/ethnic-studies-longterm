@@ -15,7 +15,8 @@
 }
 #timeline-unit{
     margin: auto;
-    height: 400px;
+    margin-top: 80px;
+    height: 500px;
     width: 80%;
 }
 #timeline{
