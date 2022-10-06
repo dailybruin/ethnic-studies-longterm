@@ -20,11 +20,15 @@ const Container = styled.div`
 `;
 
 const SectionHeader = styled.div`
-  font-size: 24px;
+  font-size: 35px;
   line-height: 1.5em;
   font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-style: italic;
   color: white;
+  text-align: center;
   margin-top: 1.5em;
+  margin-bottom: 1em;
   ${mediaQueries.mobile} {
     font-size: 22px;
     line-height: 1em;
@@ -42,10 +46,10 @@ const Figure = styled.div`
 
 const SideImg = styled.div`
   float: right;
-  width: 50%;
+  width: 90%;
   font-size: 16px;
   padding: 20px;
-  margin-right: 5%;
+  margin-right: 3%;
 
   p {
     margin: 0;
@@ -68,11 +72,39 @@ const CapCred = styled.div`
   }
 `;
 
+const TextCred = styled.div`
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  margin-top: 2.5em;
+  ${mediaQueries.mobile} {
+    font-size: 12px;
+    line-height: 1em;
+  }
+`;
+
 const TextContainer = styled.div`
   width: 90%;
   margin: auto;
   color: white;
   font-family: 'Merriweather', serif;
+  ${mediaQueries.mobile} {
+    font-size: 12px;
+    line-height: 1em;
+  }
+`
+
+const Related = styled.div`
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-family: 'Merriweather', serif;
+
+  a{
+    color: lightblue;
+  }
   ${mediaQueries.mobile} {
     font-size: 12px;
     line-height: 1em;
@@ -99,7 +131,26 @@ export default function Article(props) {
                     <p>{info.value}</p>
                   </TextContainer>
                 );
-              } else if (info.type == "graphic") {
+              } 
+              else if (info.type == "text_credits") {
+                return (
+                  <TextCred>
+                    <p>{info.value.data}</p>
+                  </TextCred>
+                );
+              } 
+              else if (info.type == "related") {
+                return (
+                  <Related>
+                    <p>[Related: 
+                    <a href={info.value.url} target="_blank"> {info.value.data}</a>
+                    ]
+                    </p>
+                    {/* <p>{info.value.data1}<a href={info.value.url} target="_blank">{info.value.data2}</a></p> */}
+                  </Related>
+                );
+              } 
+              else if (info.type == "graphic") {
                 return (
                   <Figure>
                     <img src = {info.value.url}/>

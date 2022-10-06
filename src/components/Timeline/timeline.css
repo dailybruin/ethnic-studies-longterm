@@ -39,12 +39,12 @@
 #mobile_container{
     width: 80%;
     margin: auto;
-    height: 700px;
+    height: 600px;
     /* overflow-y: scroll; */
     background-color: #ECF9F6 ;
 }
 #mobile_timeline{
-    height: 600px;
+    height: 500px;
     overflow-y: scroll;
     width: 80%;
     margin: auto;
