@@ -16,7 +16,7 @@ const Illo = styled.img`
 
 const Credits = styled.div`
   position: absolute;
-  font-family: 'Pangolin', cursive;
+  font-family: 'Merriweather', serif;
   font-size: 20px;
   font-weight: 400;
   color: white;

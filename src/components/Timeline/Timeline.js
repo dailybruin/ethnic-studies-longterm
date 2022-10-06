@@ -11,29 +11,11 @@ const Container = styled.div`
   position: relative;
 `;
 
-// const Interactive = styled.img`
-//   width: 100vw;
-//   height: auto;
-//   object-fit: cover;
-// `;
-
-
-// // export default function Timeline(props) {
-// //     return (
-// //       <Container>
-// //         <Interactive>
-
-// //         </Interactive>
-// //       </Container>
-// //     );
-// //   }
-
 const Timeline = ()=>{
-    const VALUES = ['October 2020','November 2021', 'March 2022', 'April 2022', 'May 6, 2022', 'May 12, 2022', 'May 31, 2022', 'June 3, 2022'];
+    const VALUES = ['October 2020','November 2021', 'March 2022', 'April 2022', 'May 6, 2022', 'May 12, 2022', 'May 31, 2022', 'June 3, 2022', 'July 2022'];
     const Text = ['First Event','Second Event','Third Event', '4','5','6','7','8','9'];
     const [value, setValue] = useState(0);
     const [previous, setPrevious] = useState(0);
-//   state = { value: 0, previous: 0 };
 
     return (
       <Container>
@@ -42,7 +24,12 @@ const Timeline = ()=>{
           <p className='timeline-text' id = "explainer">A proposed UC A-G ethnic studies requirement has gone through multiple iterations of revisions and feedback, and after much controversy, has hit a roadblock of implementation concerns after almost two years of deliberations.</p>
           {/* Bounding box for the Timeline */}
           <div id = 'timeline-unit'>
-          <div className='timeline-text' id = "timeline" >
+          <div className='timeline-text' id = "timeline" style={{
+            width: "100%",
+            height: "100px",
+            margin: "0 auto",
+            marginTop: "20px",
+          }}>
             <HorizontalTimeline
               index={value}
               indexClick={(index) => {
@@ -53,6 +40,7 @@ const Timeline = ()=>{
               values={ VALUES }
               getLabel= {(index)=>{return (index)}} 
               styles = {{outline: '#dfdfdf', foreground: '#79D8C3'}}
+              minEventPadding = {60}
               />
           </div>
           <div className='timeline-text text-center' id = 'timeline-info'>

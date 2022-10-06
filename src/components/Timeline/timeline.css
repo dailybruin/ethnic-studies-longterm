@@ -16,11 +16,6 @@
 #timeline-unit{
     margin: 80px;
 }
-#timeline{
-    width: 100%;
-    height: 100px;
-    margin: auto;
-}
 #timeline-info{
     width: 80%;
     margin: auto;
@@ -41,9 +36,15 @@
 }
 
 @media (max-width: 600px) {
-    #timeline{
-        width: 160%;
-        margin-left: -25%;
+    #timeline_box {
+        background-color: #ECF9F6;
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 5em;
     }
-    
+    #timeline-unit{
+        margin: 0px;
+    }
 }
