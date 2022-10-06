@@ -14,15 +14,7 @@
     color: #783E04;
 }
 #timeline-unit{
-    margin: auto;
-    margin-top: 80px;
-    height: 500px;
-    width: 80%;
-}
-#timeline{
-    width: 100%;
-    height: 100px;
-    margin: auto;
+    margin: 80px;
 }
 #timeline-info{
     width: 80%;
@@ -43,10 +35,22 @@
     margin: 0px
 }
 
-@media (max-width: 600px) {
-    #timeline{
-        width: 160%;
-        margin-left: -25%;
-    }
-    
+/*MOBILE TIMELINE */
+#mobile_container{
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    /* overflow-y: scroll; */
+    background-color: #ECF9F6 ;
+}
+#mobile_timeline{
+    height: 600px;
+    overflow-y: scroll;
+    width: 80%;
+    margin: auto;
+}
+#mobile_byline{
+    height: 100px;
+    width: 90%;
+    margin: auto;
 }
