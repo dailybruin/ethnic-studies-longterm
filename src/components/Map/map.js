@@ -24,7 +24,7 @@ return (
 <Container>
 <div id = "map_container">
 <p className='map-text' id = "header">How each University of California campus responded to the proposed revisions to Senate Regulation 424</p>
-<p className='map-text' id = "explainer">   In December 2021, the Board of Admissions and Relations with Schools proposed a revision to SR 424 to create an A-G ethnic studies requirement for freshman admission by adding an “H” requirement. The A-G subject requirements are necessary for in-state students who attend public schools to be granted admissions to the UCs and California State Universities.</p>
+<p className='map-text' id = "explainer"> In December, the Board of Admissions and Relations with Schools proposed a revision to Senate Regulation 424, creating an A-G ethnic studies requirement for freshman admission by adding an “H” requirement. The A-G subject requirements are necessary for many students to be granted admissions to University of California and California State University schools. However, some local admissions committees expressed different views than their campuses' original feedback in June updates provided to BOARS.</p>
 <Map center={[36.77,-118.41]} zoom={6} scrollWheelZoom={false}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -43,8 +43,8 @@ return (
               </Marker>);
         })}
 </Map>
-<p className='map-text'id = "sources">Sources: Board of Admissions and Relations with Schools, UC Academic Senate</p>
-<p className='map-text'id = "byline"> Graphic reporting by Shaanth Kodialam, Features and Student Life Editor and Catherine Hamilton National News and Higher Education Editor. Interactive by Priya Kanneboyina, Assistant Data editor.</p>
+<p className='map-text'id = "map_sources">Sources: Board of Admissions and Relations with Schools, UC Academic Senate</p>
+<p className='map-text'id = "map_byline"> Graphic reporting by Shaanth Kodialam, Features and Student Life Editor and Catherine Hamilton National News and Higher Education Editor. Interactive by Priya Kanneboyina, Assistant Data editor.</p>
 </div>
 </Container>
 );

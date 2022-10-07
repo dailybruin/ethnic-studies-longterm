@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 import Divider from "../images/divider.svg";
-import TopDivider from "../images/top_divider.svg"
+import TopDivider from "../images/top_divider.svg";
+import MyMap from "./Map/map";
 
 const Container = styled.div`
   margin: 8% auto;
@@ -61,11 +62,20 @@ const SideImg = styled.div`
   }
 `;
 
-const CapCred = styled.div`
+const CapCred = styled.span`
   font-style: italic;
   color: white;
   font-size: 16px;
-  margin-left: 1%;
+  ${mediaQueries.mobile} {
+    font-size: 12px;
+    line-height: 1em;
+  }
+`;
+
+const Caption = styled.span`
+  color: white;
+  font-size: 16px;
+  padding-right: 5px;
   ${mediaQueries.mobile} {
     font-size: 12px;
     line-height: 1em;
@@ -388,8 +398,16 @@ export default function Article(props) {
                 return (
                   <SideImg>
                     <img src = {info.value.url}/>
-                    <CapCred>{info.value.credits}</CapCred>
+                    <div>
+                      <Caption>{info.value.caption}</Caption>
+                      <CapCred>{info.value.credits}</CapCred>
+                    </div>
                   </SideImg>
+                )
+              }
+              else if (info.type == "map") {
+                return (
+                  <MyMap/>
                 )
               }
               else if (info.type == "divider") {

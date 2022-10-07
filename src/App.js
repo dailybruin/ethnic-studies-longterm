@@ -7,7 +7,6 @@ import Landing from "./components/Landing";
 import Article from './components/Article';
 import Banner from "./components/Banner";
 import Timeline from "./components/Timeline/Timeline";
-import MyMap from "./components/Map/map"
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -29,7 +28,6 @@ function App() {
         <Landing image={data.landing_image} credits={data.landing_credits} setLandingDisplayed={setLandingDisplayed}/>
         <Banner/>
         <Timeline/>
-        <MyMap/>
         <Article content={data.content} />
       <Footer/>
     </div>

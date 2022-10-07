@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "./static/css/main.b2fbc26b.chunk.css",
-    "main.js": "./static/js/main.f56ca1d1.chunk.js",
-    "main.js.map": "./static/js/main.f56ca1d1.chunk.js.map",
+    "main.js": "./static/js/main.8f799931.chunk.js",
+    "main.js.map": "./static/js/main.8f799931.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.3c08e68d.js",
     "runtime-main.js.map": "./static/js/runtime-main.3c08e68d.js.map",
     "static/css/2.c30f35dc.chunk.css": "./static/css/2.c30f35dc.chunk.css",
-    "static/js/2.90b87891.chunk.js": "./static/js/2.90b87891.chunk.js",
-    "static/js/2.90b87891.chunk.js.map": "./static/js/2.90b87891.chunk.js.map",
+    "static/js/2.2824d3b2.chunk.js": "./static/js/2.2824d3b2.chunk.js",
+    "static/js/2.2824d3b2.chunk.js.map": "./static/js/2.2824d3b2.chunk.js.map",
     "static/js/3.e7fff9d5.chunk.js": "./static/js/3.e7fff9d5.chunk.js",
     "static/js/3.e7fff9d5.chunk.js.map": "./static/js/3.e7fff9d5.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.c30f35dc.chunk.css.map": "./static/css/2.c30f35dc.chunk.css.map",
     "static/css/main.b2fbc26b.chunk.css.map": "./static/css/main.b2fbc26b.chunk.css.map",
-    "static/js/2.90b87891.chunk.js.LICENSE.txt": "./static/js/2.90b87891.chunk.js.LICENSE.txt",
+    "static/js/2.2824d3b2.chunk.js.LICENSE.txt": "./static/js/2.2824d3b2.chunk.js.LICENSE.txt",
     "static/media/DailyBruinLogo.6ac33239.svg": "./static/media/DailyBruinLogo.6ac33239.svg",
     "static/media/banner.f47b31fd.svg": "./static/media/banner.f47b31fd.svg",
     "static/media/divider.d1080a7e.svg": "./static/media/divider.d1080a7e.svg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.3c08e68d.js",
     "static/css/2.c30f35dc.chunk.css",
-    "static/js/2.90b87891.chunk.js",
+    "static/js/2.2824d3b2.chunk.js",
     "static/css/main.b2fbc26b.chunk.css",
-    "static/js/main.f56ca1d1.chunk.js"
+    "static/js/main.8f799931.chunk.js"
   ]
 }
