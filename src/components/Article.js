@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 import Divider from "../images/divider.svg";
 import TopDivider from "../images/top_divider.svg";
-import MyMap from "../components/Map/map";
+import MyMap from "./Map/map";
 
 const Container = styled.div`
   margin: 8% auto;
