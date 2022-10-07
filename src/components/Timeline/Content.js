@@ -2,7 +2,7 @@ export const config = {
     Dates: [
         {
             Date: "October 2020",
-            Text: "BOARS initially approves a workgroup for the ethnic studies requirement in October 2020."
+            Text: "The Board of Admissions and Relations with Schools initially approves a work group for the ethnic studies requirement."
         },
         {
             Date: "November 2021",
@@ -14,22 +14,22 @@ export const config = {
         },
         {
             Date: "April 2022",
-            Text: "Ethnic Studies workgroup addresses critiques and provides revisions."
+            Text: "Ethnic Studies work group addresses critiques and provides revisions."
         },
         {
-            Date: "May 2022",
+            Date: "May 6, 2022",
             Text: "In a May meeting, BOARS remains unswayed."
         },
         {
-            Date: "Later May 2022",
-            Text: "Christine Hong and Andrew Jolivette issue a May statement defending the requirement as written."
+            Date: "May 12, 2022",
+            Text: "Christine Hong and Andrew Jolivette issue a statement defending the requirement as written."
         },
         {
             Date: "May 31, 2022",
-            Text: "A letter to BOARS from some UC faculty sharply criticizes the requirement."
+            Text: "A letter to BOARS from some University of California faculty sharply criticizes the requirement."
         },
         {
-            Date: "June 2022",
+            Date: "June 3, 2022",
             Text: "In the BOARS’ June meeting, several local admissions committees are split on whether to continue or end deliberations on the requirement."
         },
         {
