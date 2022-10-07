@@ -2,7 +2,7 @@ import {React, useState} from "react";
 import HorizontalTimeline from "react-horizontal-timeline"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {config} from "../Content.js"
+import {config} from "./Content.js"
 import "./timeline.css"
 import styled from "styled-components";
 
