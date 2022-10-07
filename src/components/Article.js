@@ -311,7 +311,7 @@ export default function Article(props) {
                     <a href={info.value.url1} target="_blank"> {info.value.data1}</a>
                     &nbsp;explaining his 2022 resignation, Manson said K-12 schools are indoctrinating students, including in his claim a link to 
                     <a href={info.value.url2} target="_blank"> {info.value.data2}</a>
-                    &nbsp;claiming white children are coming out as LGBTQ+ as a result of feelings of guilt resulting from ethnic studies curriculum.
+                    &nbsp;claiming white children are coming out as LGBTQ+ as a result of feelings of guilt from ethnic studies curriculum.
                     </p>
                   </Related>
                 );
@@ -381,7 +381,7 @@ export default function Article(props) {
                   <Related>
                     <p>According to 
                     <a href={info.value.url} target="_blank"> {info.value.data}</a>
-                    &nbsp;from a June meeting, some local committees disapproved of the current area H proposal, despite previous support for the requirement. 
+                    &nbsp;from a June meeting, some campus-level admissions committees disapproved of the current area H proposal, despite previous support for the requirement.
                     </p>
                   </Related>
                 );
