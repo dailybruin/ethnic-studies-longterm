@@ -62,11 +62,20 @@ const SideImg = styled.div`
   }
 `;
 
-const CapCred = styled.div`
+const CapCred = styled.span`
   font-style: italic;
   color: white;
   font-size: 16px;
-  margin-left: 1%;
+  ${mediaQueries.mobile} {
+    font-size: 12px;
+    line-height: 1em;
+  }
+`;
+
+const Caption = styled.span`
+  color: white;
+  font-size: 16px;
+  padding-right: 5px;
   ${mediaQueries.mobile} {
     font-size: 12px;
     line-height: 1em;
@@ -163,7 +172,10 @@ export default function Article(props) {
                 return (
                   <SideImg>
                     <img src = {info.value.url}/>
-                    <CapCred>{info.value.credits}</CapCred>
+                    <div>
+                      <Caption>{info.value.caption}</Caption>
+                      <CapCred>{info.value.credits}</CapCred>
+                    </div>
                   </SideImg>
                 )
               }
