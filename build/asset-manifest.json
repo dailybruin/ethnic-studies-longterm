@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b2fbc26b.chunk.css",
+    "main.js": "./static/js/main.f56ca1d1.chunk.js",
+    "main.js.map": "./static/js/main.f56ca1d1.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.3c08e68d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.3c08e68d.js.map",
+    "static/css/2.c30f35dc.chunk.css": "./static/css/2.c30f35dc.chunk.css",
+    "static/js/2.90b87891.chunk.js": "./static/js/2.90b87891.chunk.js",
+    "static/js/2.90b87891.chunk.js.map": "./static/js/2.90b87891.chunk.js.map",
+    "static/js/3.e7fff9d5.chunk.js": "./static/js/3.e7fff9d5.chunk.js",
+    "static/js/3.e7fff9d5.chunk.js.map": "./static/js/3.e7fff9d5.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.c30f35dc.chunk.css.map": "./static/css/2.c30f35dc.chunk.css.map",
+    "static/css/main.b2fbc26b.chunk.css.map": "./static/css/main.b2fbc26b.chunk.css.map",
+    "static/js/2.90b87891.chunk.js.LICENSE.txt": "./static/js/2.90b87891.chunk.js.LICENSE.txt",
+    "static/media/DailyBruinLogo.6ac33239.svg": "./static/media/DailyBruinLogo.6ac33239.svg",
+    "static/media/banner.f47b31fd.svg": "./static/media/banner.f47b31fd.svg",
+    "static/media/divider.d1080a7e.svg": "./static/media/divider.d1080a7e.svg",
+    "static/media/email.caba6344.svg": "./static/media/email.caba6344.svg",
+    "static/media/fb.94ebad07.svg": "./static/media/fb.94ebad07.svg",
+    "static/media/insta.1b4400ea.svg": "./static/media/insta.1b4400ea.svg",
+    "static/media/tiktok.0b3f47d2.svg": "./static/media/tiktok.0b3f47d2.svg",
+    "static/media/top_divider.984dfe68.svg": "./static/media/top_divider.984dfe68.svg",
+    "static/media/twitter.a26273c5.svg": "./static/media/twitter.a26273c5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c08e68d.js",
+    "static/css/2.c30f35dc.chunk.css",
+    "static/js/2.90b87891.chunk.js",
+    "static/css/main.b2fbc26b.chunk.css",
+    "static/js/main.f56ca1d1.chunk.js"
+  ]
+}
