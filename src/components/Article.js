@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 import Divider from "../images/divider.svg";
-import TopDivider from "../images/top_divider.svg"
+import TopDivider from "../images/top_divider.svg";
+import MyMap from "../components/Map/map";
 
 const Container = styled.div`
   margin: 8% auto;
@@ -113,6 +114,11 @@ export default function Article(props) {
                     <img src = {info.value.url}/>
                     <CapCred>{info.value.credits}</CapCred>
                   </SideImg>
+                )
+              }
+              else if (info.type == "map") {
+                return (
+                  <MyMap/>
                 )
               }
               else if (info.type == "divider") {
